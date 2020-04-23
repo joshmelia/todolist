@@ -39,6 +39,7 @@ while True:
         print("List cleared.")
     elif a.lower() == "exit":
         print("Thanks for choosing JOSHY'S LISTS")
+        input()
         exit() 
     else:
         todo += [a]
