@@ -2,15 +2,18 @@ import json
 import os
 from sys import platform
 
+def cl():
+    if platform == 'win32':
+        return os.system('cls')
+    else:
+        return os.system('clear')
+
+cl()
+
 user = input("Enter your name: ").upper()
 
 def listgen():
-    def cl():
-        if platform == 'win32':
-            return os.system('cls')
-        else:
-            return os.system('clear')
-
+   
     cl()
 
     todo = []
